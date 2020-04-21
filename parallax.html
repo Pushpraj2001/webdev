@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> parallax</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    .parallax {
+        background-image: url("1.jpg");
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .dark-mode {
+        background-color: rgb(212, 11, 11);
+        color: rgb(121, 4, 255);
+    }
+    
+    body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <p>
+        Scroll up and down this page to see the parallax scrolling effect.
+    </p>
+    <div class="parallax"></div>
+    <div style="height: 1000px; ">
+        Scroll Up and Down this page to see the parallax scrolling
+        <div class="">Tips: try to remove the background-attachment property to remove the scrolling effect . </div>
+        <button onclick="mFunction()"> Toggle Dark Mode</button>
+        <script>
+            function mFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+</body>
+
+</html>
